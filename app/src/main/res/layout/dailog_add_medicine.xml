@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+     <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:padding="10dp">
+
+
+           <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorAccent"
+                   android:text="+ Add Medicines"
+                   android:gravity="center"
+                   android:layout_gravity="center">
+
+           </TextView>
+
+
+
+
+
+
+     </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+
+
+
+         <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <EditText
+                    android:id="@+id/edt_MedicineName"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:hint="@string/edt_medicinename"
+                    />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <EditText
+                    android:id="@+id/edt_Quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:hint="@string/edt_quantity"
+                    />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+    <CheckBox
+            android:id="@+id/chkABeforeMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Before Meal">
+
+    </CheckBox>
+
+
+    <CheckBox
+            android:id="@+id/chkAfterMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="After Meal">
+
+    </CheckBox>
+
+    <CheckBox
+            android:id="@+id/chkMorning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Morning">
+
+    </CheckBox>
+
+
+    <CheckBox
+            android:id="@+id/chkAfternoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Afternoon">
+
+    </CheckBox>
+
+
+    <CheckBox
+            android:id="@+id/chkNight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Night">
+
+    </CheckBox>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            >
+
+           <Button
+                   android:id="@+id/btnClose"
+                   android:layout_width="0dip"
+                   android:layout_height="36dp"
+                   android:text="Close"
+                   android:layout_weight="50"
+                   android:layout_gravity="right"
+                   android:layout_marginRight="10dp">
+
+           </Button>
+
+        <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dip"
+                android:layout_weight="50"
+                android:layout_height="36dp"
+                android:text="Add"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

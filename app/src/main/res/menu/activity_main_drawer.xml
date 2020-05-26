@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_addPatient"
+            android:icon="@drawable/ic_add_patient"
+            android:title="@string/add_patient_label" />
+        <item
+            android:id="@+id/nav_search_patient"
+            android:icon="@drawable/ic_search"
+            android:title="@string/search_patient" />
+
+        <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/txt_logout" />
+
+    </group>
+
+</menu>

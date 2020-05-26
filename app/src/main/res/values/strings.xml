@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Clinic Enrolment</string>
+    <string name="edt_username_hint">Email</string>
+    <string name="password">Password</string>
+    <string name="btn_login_label">LOGIN</string>
+    <string name="edt_patientname">Patient Name</string>
+    <string name="edt_mobileno">Mobile No</string>
+    <string name="edt_age">Age</string>
+    <string name="edt_reason">Reason</string>
+    <string name="txt_date">Date</string>
+    <string name="btn_save_patient">SAVE</string>
+    <string name="add_patient_label">Add Patient</string>
+    <string name="search_patient">Search</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="edt_medicinename">Medicine</string>
+    <string name="edt_quantity">Quantity</string>
+    <string name="txt_logout">Logout</string>
+    <string name="home">Home</string>
+    <string name="comment_txt">Comment</string>
+    <string name="btn_submit">Submit</string>
+    <string name="internet_connectivity">Please make sure you are connected to internet.</string>
+    <string name="edt_lab_test">Test Type</string>
+
+</resources>

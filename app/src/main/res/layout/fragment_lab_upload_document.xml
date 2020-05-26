@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/coordinatorLayout"
+        >
+
+
+     <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:gravity="center"
+             android:padding="10dp">
+
+
+           <ImageView
+                   android:layout_width="80dp"
+                   android:layout_height="80dp"
+                   android:src="@drawable/app_logo">
+           </ImageView>
+
+
+
+           <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Patient Document"
+                   android:textSize="16sp"
+                   android:gravity="center"
+                   android:padding="6dp">
+
+           </TextView>
+
+
+
+           <ImageView
+                   android:id="@+id/imagePicked"
+                   android:layout_width="250dp"
+                   android:layout_height="250dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/file">
+           </ImageView>
+
+
+
+         <com.google.android.material.textfield.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="30dp"
+                 android:layout_marginRight="30dp"
+                 android:layout_marginTop="10dp">
+
+
+             <EditText
+                     android:id="@+id/edtLabComment"
+                     android:layout_width="match_parent"
+                     android:layout_height="42dp"
+                     android:hint="@string/comment_txt"
+                     android:inputType="text"
+                     />
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+         <Button
+                  android:id="@+id/btnSelect"
+                  android:layout_width="200dp"
+                  android:layout_height="40dp"
+                  android:layout_marginTop="20dp"
+                  android:text="Select"
+                  android:background="@color/colorPrimary"
+                  android:textColor="@color/white">
+          </Button>
+
+
+
+
+     </LinearLayout>
+
+    <include
+            android:id="@+id/llProgressBar"
+            android:visibility="gone"
+            layout="@layout/progress_dailog"/>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinatorLayout">
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!-- The ActionBar displayed at the top -->
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:id="@+id/toolbar"
+                android:background="@color/colorPrimary"
+                app:subtitleTextColor="@color/white"
+                android:gravity="center"
+                android:contentInsetEnd="0dp"
+                android:contentInsetStart="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- The main content view where fragments are loaded -->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+        <LinearLayout
+                android:id="@+id/llMedicineList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="74"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/medicineRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="26">
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            >
+
+
+                        <EditText
+                                android:id="@+id/edtComment"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:hint="@string/comment_txt"
+                                android:inputType="text"
+                                android:imeOptions="actionDone"
+                                />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:text="@string/btn_submit"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:drawablePadding="10dp"
+                            android:background="@color/colorPrimary"
+                            android:textColor="@color/white"
+                            android:elevation="10dp"
+                            />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+                android:visibility="gone"
+                android:id="@+id/txtEmptyData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="No Appointments Found"
+                android:textSize="16sp"
+                android:textColor="@color/black">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <include
+            android:id="@+id/llProgressBar"
+            android:visibility="gone"
+            layout="@layout/progress_dailog"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "519658787313",
+    "firebase_url": "https://clinic-enrollment.firebaseio.com",
+    "project_id": "clinic-enrollment",
+    "storage_bucket": "clinic-enrollment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519658787313:android:807c57c856953f3c4ab450",
+        "android_client_info": {
+          "package_name": "com.example.clinicenrolment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "519658787313-rhpm4h9t43of6eeblqsl2pekk93j6e0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clinicenrolment",
+            "certificate_hash": "26207ee2fcdb897a35e51519ae8558dfd228917c"
+          }
+        },
+        {
+          "client_id": "519658787313-l47tsddcc7q5c7vrdkn0h045sn7gvdr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRNx7wgGrsdqeH_Gyw6RMbk3bvHvSj790"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "519658787313-l47tsddcc7q5c7vrdkn0h045sn7gvdr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
